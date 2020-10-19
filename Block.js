@@ -18,7 +18,7 @@ class Block{
   display(){
     var pos = this.body.position; 
     
-    if(this.body.speed < 8){ 
+    if(this.body.speed < 3){ 
       push(); 
       translate(pos.x, pos.y);  
       strokeWeight(3);
