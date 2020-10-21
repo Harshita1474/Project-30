@@ -19,14 +19,16 @@ class Block{
     var pos = this.body.position; 
     rect(this.body.position.x,this.body.position.y,this.width,this.height);
     
-    if(this.body.speed > 3){
+    if(this.body.speed < 5){
+      rect(this.body.position.x,this.body.position.y,this.width,this.height);
+    }else{
     World.remove(world, this.body);
      push();
      this.Visiblity = this.Visiblity - 5;
      tint(255,this.Visiblity);
      rect(this.body.position.x, this.body.position.y, this.width, this.height);
      pop();
-  }
+    }
 
  
 
