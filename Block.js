@@ -17,8 +17,7 @@ class Block{
 
   display(){
     var pos = this.body.position; 
-    rect(this.body.position.x,this.body.position.y,this.width,this.height);
-    
+        
     if(this.body.speed < 5){
       rect(this.body.position.x,this.body.position.y,this.width,this.height);
     }else{
